@@ -3,6 +3,7 @@ html {box-sizing: border-box;}
 
 body {
     width: 1000px;
+    height: auto;
     margin: auto;
 }
 
@@ -91,9 +92,24 @@ section:nth-child(4) {
 }
 
 section > div {
-    color: white;
-    background: black;
+    border: 1px solid black;
+    background: white;
     height: 100%;
     width: 100%;
+}
+
+#skateboards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    height: 260px;
+    border: 1px solid black;
+}
+
+.skateboard-pic {
+    flex-grow: 1;
+    height: 260px;
+    width: 60px;
+    border: 1px solid black;
 }
 
