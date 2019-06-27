@@ -6,6 +6,40 @@ body {
     margin: auto;
 }
 
+ul {
+    list-style: none;
+}
+
+#subscribe {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#subscribe > ul  {
+    display: flex;
+}
+
+#subscribe > ul > li {
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    justify-content: space-evenly;
+    margin-right: 120px;
+}
+
 #jumbotron {
     width: 1000px;
     height: 500px;
@@ -26,19 +60,19 @@ article {
 }
 
 section {
-    width: 150px;
-    height: 70px;
+    width: 300px;
+    height: 140px;
     float: left;
     padding: 1px;
 }
 
 section:nth-child(3) {
-    width: 300px;
+    width: 600px;
 }
 
 section:nth-child(4) {
-    height: 140px;
-    margin-top: -70px;
+    height: 280px;
+    margin-top: -140px;
 }
 
 section > div {
