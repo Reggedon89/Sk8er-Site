@@ -1,0 +1,50 @@
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+#jumbotron {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+}
+#wrap-1 {
+    display: flex;
+}
+article {
+    height: 350px;
+    width: 250px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+#skateboarders {
+    width: 1000px;
+}
+
+section {
+    width: 150px;
+    height: 70px;
+    float: left;
+    padding: 1px;
+}
+
+section:nth-child(3) {
+    width: 300px;
+}
+
+section:nth-child(4) {
+    height: 140px;
+    margin-top: -70px;
+}
+
+section > div {
+    color: white;
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+
