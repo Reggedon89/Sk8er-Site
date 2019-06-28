@@ -34,7 +34,7 @@ a:visited {
     font-size: 15px;
     color: white;
     position: relative;
-    top: 13px;
+    top: 10px;
 }
 
 #psubscribe > i {
@@ -42,7 +42,7 @@ a:visited {
     border-radius: 100%;
     font-size: 3px;
     position: relative;
-    bottom: 2px;
+    bottom: 4px;
 }
 
 #subscribe {
@@ -78,7 +78,7 @@ a:visited {
 
 /* This is the styling for the elipses on the side of subscribe */
 #elipses {
-    font-size: 5px;
+    font-size: 3px;
     position: relative;
     right: 5px;
     top: 5px;
@@ -114,6 +114,7 @@ nav > ul > li {
     margin: 9px 14px -10px -5px;
     position: relative;
     right: 10px;
+    border-bottom: 2px solid rgb(125, 123, 120);
 
 }
 
@@ -122,6 +123,7 @@ nav > ul > li > a {
     margin-top: 5px;
     color: white;
     text-decoration: none;
+    
 }
 
 
@@ -249,6 +251,10 @@ section:nth-child(4) {
 background-image: url("assets/sk8er-4.png");
 }
 
+#skater-1 > div > h2 {
+    opacity: 0.8;
+}
+
 #skater-2 > div {
   background-image: url("assets/sk8er-3.png");
   color: white;
@@ -256,9 +262,19 @@ background-image: url("assets/sk8er-4.png");
   text-align: center;
 }
 
-section:nth-child(3) > div{
+#skater-2 > div > h2 {
+    opacity: 0.8;
+}
+
+section:nth-child(3) > div {
     background-image: url("assets/sk8er-1.png");
 }
+
+section:nth-child(3) > div > h2 {
+    margin-top: 100px;
+    opacity: 0.8;;
+}
+
 
 #skater-4 > div{
    background-image: url("assets/sk8er-2.png");
@@ -267,6 +283,7 @@ section:nth-child(3) > div{
 
 #skater-4 > div >h2 {
     margin-top: 250px;
+    opacity: 0.8;
 }
 /* Centers the pictures */
 .skateboarder {
@@ -276,6 +293,7 @@ section:nth-child(3) > div{
     font-weight: bolder;
     font-size: 30px;
     text-align: center;
+    
     color: white;
 }
 
@@ -283,27 +301,28 @@ section:nth-child(3) > div{
 section > div {
     border: 10px solid white;
     overflow: hidden;
-    /* background: white; */
     height: 100%;
     width: 100%;
 }
 
 #skateboards {
     display: flex;
-    justify-content: space-evenly;
-    width: 1000px;
+    background: white;
+    width: 995px;
     height: 260px;
-    border: 1px solid black;
-    margin-bottom: 40px;
+    margin: 0px 5px 40px -5px;
     position: relative;
     bottom: 190px;
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: 5%
 }
 
 .skateboard-pic {
     flex-grow: 1;
     height: 260px;
     width: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* Footer styles */
@@ -312,18 +331,39 @@ footer {
     display: flex;
     position: relative;
     bottom: 180px;
+    background: white;
 }
 
 #customer-info {
     flex-direction: column;
+    padding: 10px 0px 5px 0px;
 }
 
 #customer-info > input {
-    line-height: 25px;
+    box-shadow: 0px 0px 2px 0px;
+    line-height: 35px;
     width: 420px;
+    margin-bottom: 15px;
 }
 #customer-info > textarea {
+    box-shadow: 0px 0px 2px 0px;
     width: 420px;
+}
+
+#contact {
+   
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#sub2 {
+    font-size: 20px;
+    position: relative;
+    right: 35px;
+}
+
+#sub2 > ul > li {
+    padding-right: 5px;
 }
 
 /* This is the CSS style for the SUBMIT button */
