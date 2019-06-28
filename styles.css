@@ -5,6 +5,16 @@ body {
     width: 1000px;
     height: auto;
     margin: auto;
+    /* the image */
+    background-image: url("assets/bg.jpg");
+
+    /* Set to full height */
+    height: 100%;
+
+    /* Center the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
@@ -35,20 +45,38 @@ nav > ul {
 }
 /* *Reminder to include inner divs in HTML for both the background and the logo */
 nav > ul > li {
-    justify-content: space-evenly;
+    width: 140px;
+    height: 35px;
+    background: red;
+    text-align: center;
     margin-right: 120px;
 }
 
+
+
 #jumbotron {
     width: 1000px;
-    height: 500px;
+    height: 320px;
     border: 1px solid black;
-}
-/* Radio button  make sure changes here don't affect comment section*/
+    /* Add background image */
+    background-image: url("assets/top-image.png");
 
+    /* center the background */
+    background-position:   37% 25%;
+}
+
+/* adds a grid over Jumbotron image */
+#grid {
+    width: 1000px;
+    height: 320px;
+    background-image: url("assets/grid.png");
+    opacity: 0.5;
+}
 fieldset {
     border: none;
 }
+
+/* Radio button  make sure changes here don't affect comment section*/
 
 #radio {
     display: flex;
