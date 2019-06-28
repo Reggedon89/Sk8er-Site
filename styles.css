@@ -16,11 +16,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* grab all these tags and remove the styling */
 
 ul {
     list-style: none;
 }
+
+a:visited {
+    text-decoration: none;
+}
+
+
 /* This CSS controls the subscribe buttons on the top of the page */
+
+#psubscribe {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: 13px;
+}
+
+#psubscribe > i {
+    background: white;
+    border-radius: 100%;
+    font-size: 3px;
+    position: relative;
+    bottom: 2px;
+}
+
 #subscribe {
     display: flex;
     justify-content: flex-end;
@@ -30,13 +53,43 @@ ul {
     display: flex;
 }
 
+#facebook {
+    color: rgb(59, 89, 152);
+}
+
+#rss {
+    color: rgb(238, 128, 47);
+
+}
+
+#twitter {
+    color: rgb(29, 161, 242)
+
+}
+
+#youtube {
+    color: rgb(230, 33, 23)
+
+}
+
+/* This is the styling for the elipses on the side of subscribe */
+#elipses {
+    font-size: 5px;
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+
+#elipses > li {
+    background: white;
+}
+
 #subscribe > ul > li {
-    justify-content: space-around;
+    font-size: 40px;
     margin-right: 20px;
 }
 /* add styling to the nav bar on top of the jumbotron */
 nav {
-    display: flex;
     justify-content: center;
 }
 
@@ -45,11 +98,26 @@ nav > ul {
 }
 /* *Reminder to include inner divs in HTML for both the background and the logo */
 nav > ul > li {
+    font-size: 12px;
     width: 140px;
     height: 35px;
-    background: red;
+    background-color:  rgb(153,46,49);
+    flex-grow: 1;
     text-align: center;
     margin-right: 120px;
+    text-decoration: none;
+    padding-top: 11px;
+    margin: 9px 14px -10px -5px;
+    position: relative;
+    right: 10px;
+
+}
+
+nav > ul > li > a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -57,20 +125,36 @@ nav > ul > li {
 #jumbotron {
     width: 1000px;
     height: 320px;
-    border: 1px solid black;
+    border: 10px solid rgb(252,252,252)  ;
     /* Add background image */
     background-image: url("assets/top-image.png");
 
     /* center the background */
     background-position:   37% 25%;
+
+    z-index: 1;
+    position: relative;
 }
+
+/* place logo inside the jumbotron */
+
+#logo > img {
+    margin: 41px 0px 0px 25px;
+    /* opacity: 1; */
+    z-index: 3;
+    position: relative;
+    bottom:325px;
+}
+    
 
 /* adds a grid over Jumbotron image */
 #grid {
-    width: 1000px;
-    height: 320px;
+    width: 985px;
+    height: 300px;
     background-image: url("assets/grid.png");
     opacity: 0.5;
+    z-index: 2;
+    position: relative;
 }
 fieldset {
     border: none;
@@ -91,6 +175,7 @@ fieldset {
 .article {
     height: 350px;
     width: 300px;
+    background: white;
     border: 1px solid black;
     margin-right: 10px; 
     flex-grow: 1;
@@ -106,15 +191,19 @@ section {
     height: 154px;
     float: left;
     padding: 5px;
+    
+    
 }
 
 section:nth-child(3) {
     width: 660px;
+    
 }
 
 section:nth-child(4) {
     height: 308px;
     margin-top: -154px;
+    
 }
 
 section > div {
