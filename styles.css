@@ -374,6 +374,8 @@ button {
     color: white;
     background: rgb(154, 45, 49);
     float: right;
+    margin-top: 10px;
+
 }
 /*  */
 ::placeholder {
